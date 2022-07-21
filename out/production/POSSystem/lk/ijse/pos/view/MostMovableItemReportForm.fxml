@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MostMovableItemReportContext" prefHeight="610.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.MostMovableItemReportFormController">
+   <children>
+      <Label layoutX="102.0" layoutY="29.0" prefHeight="40.0" prefWidth="349.0" text="Most Movable Item Report">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="16.0" layoutY="20.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/back.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="12.0" layoutY="82.0" prefHeight="0.0" prefWidth="780.0" />
+      <Label alignment="CENTER" layoutX="589.0" layoutY="6.0" prefHeight="31.0" prefWidth="205.0" text="SUPER MARKET" textAlignment="CENTER" textFill="#0b1e7c">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="510.0" layoutY="41.0" prefHeight="26.0" prefWidth="155.0" text="Date :2021-10-11">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="665.0" layoutY="41.0" prefHeight="26.0" prefWidth="123.0" text="Time :10:20:21">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMostMovableItems" layoutX="23.0" layoutY="129.0" prefHeight="457.0" prefWidth="765.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="77.0" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="261.0" text="Description" />
+            <TableColumn fx:id="colUnitePrice" prefWidth="126.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="165.0" text="Qty. on Hand" />
+            <TableColumn fx:id="colSoldCount" prefWidth="127.0" text="Sold Count" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

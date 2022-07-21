@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DailyIncomeContext" prefHeight="602.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DailyIncomeReportFormController">
+   <children>
+      <Label layoutX="100.0" layoutY="32.0" prefHeight="40.0" prefWidth="349.0" text="Daily Income Report">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/back.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="10.0" layoutY="85.0" prefHeight="0.0" prefWidth="780.0" />
+      <Label alignment="CENTER" layoutX="587.0" layoutY="9.0" prefHeight="31.0" prefWidth="205.0" text="SUPER MARKET" textAlignment="CENTER" textFill="#0b1e7c">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="508.0" layoutY="44.0" prefHeight="26.0" prefWidth="155.0" text="Date :2021-10-11">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="663.0" layoutY="44.0" prefHeight="26.0" prefWidth="123.0" text="Time :10:20:21">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDailyIncome" layoutX="34.0" layoutY="118.0" prefHeight="457.0" prefWidth="740.0">
+         <columns>
+            <TableColumn fx:id="colDate" prefWidth="358.0" text="Date" />
+            <TableColumn fx:id="colIncome" prefWidth="378.0" text="Income" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

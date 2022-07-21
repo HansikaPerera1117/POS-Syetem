@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminMainContext" prefHeight="425.0" prefWidth="586.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.AdministratorMainFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="36.0" prefHeight="51.0" prefWidth="291.0" text="SUPER MARKET" textAlignment="CENTER" textFill="#0b1e7c">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="22.0" layoutY="94.0" prefHeight="4.0" prefWidth="544.0" />
+      <ImageView fx:id="ImgManageItems" fitHeight="135.0" fitWidth="200.0" layoutX="97.0" layoutY="135.0" onMouseClicked="#navigationOnAction" onMouseEntered="#MouseEnteredOnAction" onMouseExited="#MouseExitedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/manage_items.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgSystemReports" fitHeight="135.0" fitWidth="200.0" layoutX="354.0" layoutY="135.0" onMouseClicked="#navigationOnAction" onMouseEntered="#MouseEnteredOnAction" onMouseExited="#MouseExitedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/report.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" layoutX="258.0" layoutY="313.0" text="Welcome" textFill="#0b1e7c">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="137.0" layoutY="336.0" prefHeight="30.0" prefWidth="348.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="385.0" onMouseClicked="#LogoutOnAction" text="LogOut">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

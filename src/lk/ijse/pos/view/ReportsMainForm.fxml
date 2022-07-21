@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportsMainContext" prefHeight="430.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ReportsMainFormController">
+   <children>
+      <Label layoutX="108.0" layoutY="32.0" text="System Reports">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="22.0" layoutY="23.0" onMouseClicked="#backToAdministratorMainOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/home.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="18.0" layoutY="86.0" prefHeight="3.0" prefWidth="633.0" />
+      <Label alignment="CENTER" layoutX="382.0" layoutY="23.0" prefHeight="53.0" prefWidth="269.0" text="SUPER MARKET" textAlignment="CENTER" textFill="#0b1e7c">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgIncome" fitHeight="130.0" fitWidth="120.0" layoutX="88.0" layoutY="147.0" onMouseClicked="#navigationOnAction" onMouseEntered="#MouseEnteredOnAction" onMouseExited="#MouseExitedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/Income.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMostMovableItems" fitHeight="130.0" fitWidth="120.0" layoutX="275.0" layoutY="147.0" onMouseClicked="#navigationOnAction" onMouseEntered="#MouseEnteredOnAction" onMouseExited="#MouseExitedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/Most-Moveble-Items.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLessMovableItems" fitHeight="130.0" fitWidth="120.0" layoutX="454.0" layoutY="147.0" onMouseClicked="#navigationOnAction" onMouseEntered="#MouseEnteredOnAction" onMouseExited="#MouseExitedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/Less-Moveble-Items.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" layoutX="241.0" layoutY="323.0" text="Welcome" textFill="#0b1e7c">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="183.0" layoutY="346.0" prefHeight="30.0" prefWidth="348.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
